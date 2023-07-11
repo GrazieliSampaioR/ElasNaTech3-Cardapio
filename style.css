@@ -1,0 +1,256 @@
+/*Fontes importadas do fonts.google e formatações da página inteira*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/*Estilizações do conteúdo do header e logo*/
+.conteúdo-header{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    position:fixed;
+    padding-left: 30rem;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #bd7e4a;
+}
+/*Estilização da logo*/
+.logo{
+    width: 90px;
+    height: auto;
+    margin-top: 1rem;
+    display: flex;
+    align-items:center;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+/*Estilização do Menu*/
+.conteúdo-header .menu{
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+.conteúdo-header .menu li a{
+    padding: 3rem 1rem 1rem 1rem;
+    color: #83502e;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    transition: all 200ms ease-in;
+}
+.conteúdo-header .menu li a:hover{
+    background-color: #d2a56d;
+    border-bottom: 2px solid #83502e;
+    color: #83502e;
+}
+/*Estilização da seção de apresentação e botões com links para o main.*/
+.secao-apresentacao{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d6b388;
+}
+.secao-apresentacao h1{
+    color: #83502e;
+    font-size: 5rem;
+    text-transform: uppercase;
+    border-bottom: 1rem;
+}
+.secao-apresentacao h2{
+    color: #bd7e4a;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.secao-apresentacao .apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.botao{
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+.botao button {
+    width: 150px;
+    height: 60px;
+    text-transform: uppercase;
+    background-color: #bd7e4a;
+    color: #83502e;
+    font-weight: 400;
+    border-radius: 10px;
+    margin-top: 3rem;
+    transition: all 400ms ease-in;
+}
+.botao button:hover{
+    border: 1px solid #83502e;
+    background: transparent;
+    color: #83502e;
+}
+.botao a{
+    color: #3a1b06;
+}
+/*Estilização do conteúdo principal: produtos, parte de adoção*/
+/*Cardápio*/
+.cardapio{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6b388;
+}
+.cardapio h2{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #83502e;
+}
+.itens-cardapio{
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 500px));
+}
+.itens-cardapio .info{
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #96613d;
+}
+.itens-cardapio img{
+    padding-left: 80px;
+    width: 80%;
+    height: 150px;
+}
+.itens-cardapio .info h3{
+    color: #3a1b06;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.itens-cardapio .info h4{
+    color: #3a1b06;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin-left: 6rem;
+    grid-template-columns: 150px 150px
+}
+.itens-cardapio .info h4 span{
+    font-size: 1.4rem;
+    color:#3a1b06;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+.itens-cardapio div{
+    background-color: #966a4c;
+    border-radius: 10px;
+    box-shadow: #c0843c 0px 0px 4px 1px;
+}
+/*Estilização da área do futuro formulário de adoção*/
+.adocao{
+    width: 100vw;
+    height: 50vh;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #3a1b06;
+    background-color: #d6b388;
+}
+.adocao h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.info-2 p{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+/*Estilizaçção da área de contatos e localização*/
+.mais-info{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+    background-color: #d6b388;
+
+}
+.mais-info h3{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.contato{
+    width: 450px;
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content:space-between;
+    color: #3a1b06;
+}
+.contato h3{
+    color: #3a1b06;
+}
+.contato i{
+    margin-right: 1rem;
+}
+.contato span{
+    margin-left: 1rem;
+}
+.contato a{
+    color: #3a1b06;
+    text-transform: uppercase;
+}
+.contato a:hover{
+    color:#966a4c ;
+}
+.contato i:hover{
+    color: #966a4c;
+}
+/*Estilização do footer, minha assinatura*/
+footer{
+    height: 25px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6b388;
+}
